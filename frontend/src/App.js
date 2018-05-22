@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import AddXpForm from './Components/AddXpForm'
 import Lvl40 from './Components/Lvl40'
 import DailyXp from './Components/DailyXp'
