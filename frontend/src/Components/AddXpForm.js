@@ -32,7 +32,7 @@ class AddXpForm extends Component {
         <form onSubmit={this.handleSubmit.bind(this)}
           className="form-inline row justify-content-center">
           <div className="form-group">
-            <label for="xp">Current Total XP</label>
+            <label>Current Total XP</label>
             <input
             type="number"
             min="0"
