@@ -15,12 +15,16 @@ const ConnectedDailyXp = ({ user_xp_entries }) =>
     var xp = last_entry.value - first_entry.value;
     var time_diff = Math.abs(new Date(last_entry.datetime) - new Date(first_entry.datetime));
     var days_diff = Math.ceil(time_diff / (1000 * 3600 * 24));
-    progress = Math.round(xp / days_diff);
+    if (days_diff > 1){
+      progress = Math.round(xp / days_diff);
+    }
   }
-  return (
+  return (progress > 0) ? (
     <div className="font-weight-bold">
       You are making {progress} XP per day !
     </div>
+  ) : (
+    null
   )
 };
 
