@@ -30,22 +30,20 @@ class AddXpForm extends Component {
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit.bind(this)}
-          className="form-inline row justify-content-center">
-          <div className="form-group">
+          className="form-inline row justify-content-center mt-3">
             <label>Current Total XP</label>
             <input
             type="number"
             min="0"
             name="xp"
-            className="form-control m-2 mr-sm-2"
+            className="form-control"
             placeholder="20.000.000"
             onChange={this.handleChange.bind(this)} />
-          </div>
 
-          <input
-          type="submit"
-          value="Add"
-          className="btn btn-primary m-2"/>
+            <input
+            type="submit"
+            value="Add"
+            className="btn btn-primary"/>
         </form>
       </div>
     );
