@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import AddXpForm from './Components/AddXpForm'
 import Lvl40 from './Components/Lvl40'
 import DailyXp from './Components/DailyXp'
+import DaysTo40 from './Components/DaysTo40'
 import XpProgressChart from './Components/XpProgressChart'
 import { getXpEntries } from './actions/Xp'
 
@@ -26,6 +27,7 @@ class App extends Component {
             <hr className="ml-4 mr-4"/>
             <Lvl40 />
             <DailyXp />
+            <DaysTo40 />
             <XpProgressChart />
           </div>
         </div>

@@ -16,7 +16,8 @@
     "react-timeseries-charts": "^0.13.1",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
-    "redux-persist": "^5.6.12"
+    "redux-persist": "^5.6.12",
+    "reselect": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
